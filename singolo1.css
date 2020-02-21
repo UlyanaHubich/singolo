@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header li{
+    list-style: none;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 6px;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+}
+
+header li a:hover{
+    color: #f06c64;
+}
+
+header nav a{
+    text-decoration: none;
+    display:inline-block;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;    
+    padding: 32px 0 ;
+    text-align: right;
+    letter-spacing: -0.11em;
+
+}
+
+header nav{
+    float: right;
+    padding: 0px 0 35px 0;
+}
+header h2 { 
+    font-size: 25px;
+    line-height: 7px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;  
+    padding: 26px 0;
+    letter-spacing: -0.015em;
+}
+
+
+header h2, nav {
+    display: inline-block;
+}
+h1 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: -0.005em;
+}
+
+
+.container{
+    width: 1020px;
+    margin: 0 auto;
+}
+.container1 {
+    width: 940px;
+    margin: 0 auto;
+}
+.wrapper{
+    background-color:#2d303a;
+    padding: 1% 0;
+    height: 90px;
+    border-bottom: 6px solid #323746;
+
+}
+.red {
+    color: #f06c64;
+}
+.point {
+    color:  #494e62;
+    font-size: 20px;
+    vertical-align: text-top;
+    padding: 0 9px;
+}
+.menu{
+    margin-right:-10px;
+     
+}
+.redbackground {
+    width: 1020px;
+    height: 600px;
+    background-color: #f06c64;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    background-position:center; 
+    background-position: 100% 100%;
+    border-bottom: 6px solid #ea676b;
+    position: relative;
+}
+
+
+.slider {
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 52px 0 0 0; 
+        
+}
+
+
+.iphoneVert{
+    margin-left: 28px;
+}
+.iphoneHor{
+    margin-left: 36px;
+}
+
+.arrowright{
+    transform: translate(55px, 0px);
+    cursor: pointer;
+}
+.arrowleft{
+       margin-left: 41px;
+    cursor: pointer;
+}
+
+.ourservices{
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: justify ;
+    padding-bottom: 20px;
+}
+.services {
+    width: 1020px;
+    background-color: #f2f2f2;
+    padding-top: 68px;
+    border-bottom: 6px solid white;
+    
+}
+
+.description {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: justify;
+    padding: 27px 0;
+}
+.design, .ideas, .love {
+    width: 219px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 19px;
+    letter-spacing: 0.01em;
+    word-break: break-all;
+    
+}
+
+
+.layot, .support, .star {
+    width: 219px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 29px;
+   letter-spacing: 0.01em;
+   word-break: break-all;
+    
+}
+
+.design h3, .ideas h3, .love h3, .layot h3, .support h3, .star h3{
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding-bottom: 10px;
+    letter-spacing: -0.008em;
+}
+
+.containerflex {
+    
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.designicon, .ideasicon, .loveicon {
+    width: 59px;
+    height: 59px;
+    padding-top: 21px;
+   
+}
+
+.layoticon, .supporticon, .staricon{
+    width: 59px;
+    height: 59px;
+    padding-top: 31px;
+   
+}
+
+.icons {
+    padding: 74px 0 65px 0;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
