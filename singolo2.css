@@ -17,18 +17,18 @@ h1 {
 
 .portfolio p {
     width: 940px;
-    /*height: 57px;*/
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
     font-family: "Lato";
     font-weight: 300;
     text-align: left;
-    padding-bottom: 10px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    
 }
 
 .portfolio a {
-   /* list-style: none;*/
     text-align: justify;
     font-size: 12px;
     line-height: 22px;
@@ -41,23 +41,29 @@ h1 {
     border-radius: 5px;
     background-color: #2d303a;
     border: 1px solid #666d89;
-    padding: 3px 10px 3px 0;
-    margin-right: 8px;
-    letter-spacing: 0.01em;
-    text-align: justify;
-    }
+    padding: 2px 5px 3px 6px;
+    margin-right: 6px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.portfolio a:first-child{
+    padding: 2px 7px 3px 7px;
+
+}
+
 
 .portfolio a:hover {
     color: white;
     border-color: white;
 }
 .portfolio nav {
-padding-bottom: 20px;
+padding-bottom: 19px;
 }
 
 .container {
     width: 1020px;
-    height: 866px;
+    height: 867px;
     margin: 0 auto;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
@@ -70,23 +76,26 @@ padding-bottom: 20px;
 }
 
 .images {
+    max-height: 605px;
     display: flex;
-    width: 100%;
-    max-width:100%;
     justify-content: space-between;
     align-items: center;         
     flex-wrap: wrap;
+    overflow: hidden;
+    
 }
 
 .images img {        
     width: 220px;
     height: 187px;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
 }
+
+
 
 .container1{
     width: 1020px;
-    height: 728px;
+    height: 734px;
     background-color: #f2f2f2;
     margin: 0 auto;
     border-bottom: 6px solid #ffffff;
@@ -102,6 +111,7 @@ padding-bottom: 20px;
     text-align: left;
     padding-top: 68px;
     letter-spacing: -0.004em;
+    
 }
 .about p {
     font-size: 18px;
@@ -111,6 +121,7 @@ padding-bottom: 20px;
     font-weight: 300;
     text-align: left;
     padding-top: 27px;
+    overflow: hidden;
 }
 
 .photos img {
@@ -127,9 +138,11 @@ padding-bottom: 20px;
 }
 
 .sectionfirst, .sectionsecond, .sectionthird {
-    max-width: 31.8%;
-    margin-top: 46px;
+    max-width: 32%;
+    margin-top: 45px;
+   
 }
+
 
 .photos h3{
     font-size: 18px;
@@ -140,6 +153,7 @@ padding-bottom: 20px;
     text-align: left;
     padding-top: 13px;
     letter-spacing: -0.008em;
+    overflow: hidden;
 }
 .photos p{
     font-size: 12px;
@@ -150,28 +164,51 @@ padding-bottom: 20px;
     text-align: left;
     padding-top: 10px;
     padding-bottom: 20px;
+    overflow: hidden;
+    letter-spacing: -0.05px;
+    text-align: justify;
 }
 
-.icons{
-    
-   /* float: left;
-    width: 50%;*/
-    
- 
- }
- .fab{
+
+.icons a{    
+    cursor: pointer;   
+}
+
+.icons {
+    display: flex;
+}
+
+.social{
     width: 32px;
     height: 32px;
     border-radius: 16px;
     border: 1px solid #666d89;
-    margin: 2px;
+    margin: 2px 8px 2px 0;
     color: #666d89;
     text-align: center;
     padding-top: 8px;
- }
+    display: flex;
+    
+}
 
- .fa-facebook-f {
-   /* color: #666d89;*/
+.social:hover {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: white;
+}
 
- }
+
+.facebook {
+    background: url(assets/facebook.png) no-repeat center;
+}
+ .google {
+    background: url(assets/google+.png) no-repeat center;
+}
+.twitter {
+    background: url(assets/twitter.png) no-repeat center;
+}
+.linkedin {
+    background: url(assets/linkedin.png) no-repeat center;
+}
  
