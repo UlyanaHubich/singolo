@@ -5,19 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="singolo3.css">
+   
     <title>Singolo3</title>
 </head>
 <body>
     <div class="get_a_quote">
-        <h3>Get a Quote</h3>
-        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, 
+        <div class="wrapper">
+            <h2>Get a Quote</h2>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, 
             nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, 
             tortor mauris condimentum nibh.</p>
+
+            <form action="#">
+                        
+                <input type="text" id="name" placeholder="Name (Required)">
+                <input type="text" id="email" placeholder="Email (Required)">
+                <input type="text" id="subject" placeholder="Subject">
+                <textarea id="project" placeholder="Describe your project in detail..."></textarea>
+                <button type="submit" id="register">Submit</button>
+                   
+            </form>
+
+
+            <div class="contact">
+                <h3>Contact Information</h3>
+                <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. 
+                    Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. 
+                </p>
+                
+
+                <ul class = "adress">
+                    <li>
+                        <div class = "location"></div>
+                        <a href="#">Elm St. 14/05 Lost City</a>
+                    </li>
+                    <li>
+                        <div class = "phone"></div>
+                        <a href="tel:03528 331 8635">03528 331 86 35</a>
+                    </li>
+                    <li class = "mail" >
+                        <div class = "mail"></div>
+                        <a href="email:info@singolo.com">info@singolo.com</a>
+                    </li>
+                    
+                </ul>
+                                    
+
+            </div>
+        </div>
+        
 
     </div>
 
     <footer class="footer">
         <p>© Copyright 2013</p>
+        <div class="icons">                        
+            <div class="social facebook"><a href="#"></a></div>
+            <div class="social google"><a href="#"></a></div>
+            <div class="social twitter"><a href="#"></a></div>
+            <div class="social linkedin"><a href="#"></a></div>
+            
+        </div>
 
     </footer>
     
