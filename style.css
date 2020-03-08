@@ -313,6 +313,7 @@ padding-bottom: 19px;
     flex-wrap: wrap;
     overflow: hidden;
     
+    
 }
 
 .images img {        
@@ -426,6 +427,7 @@ padding-bottom: 19px;
 .social:hover {
     background-color: #f06c64;
     cursor: pointer;
+    border: 1px solid #f06c64;
 }
 
 
