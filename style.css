@@ -306,14 +306,16 @@ padding-bottom: 19px;
 }
 
 .images {
-    max-height: 605px;
     display: flex;
     justify-content: space-between;
     align-items: center;         
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
+    
+}
+
+.images_layot {
+    height: 605px;
     overflow: hidden;
-    
-    
 }
 
 .images img {        
