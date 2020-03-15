@@ -6,30 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
+    
     <title>Singolo</title>
 </head>
 <body>
+    <div id="home" class="anchor"></div>
     <header>
-        <div class="container">
-            <div class="wrapper">
-                <div class="container940 clearfix">
-                    <h1>Singolo<span>*</span></h1>
-                    <nav class="menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
+        <div class="container wrapper">
+            <div class="container940 clearfix">
+                <h1>Singolo<span>*</span></h1>
+                <nav class="menu" id="headermenu">
+                    <ul class="navigation">
+                            <li class="menulink active" ><a href="#home">Home</a></li>
                             <li class="point">.</li>
-                            <li><a href="#">Services</a></li>
+                            <li class="menulink"><a href="#services">Services</a></li>
                             <li class="point">.</li>
-                            <li><a href="#">Portfolio</a></li>
+                            <li class="menulink"><a href="#portfolio">Portfolio</a></li>
                             <li class="point">.</li>
-                            <li><a href="#">About</a></li>
+                            <li class="menulink"><a href="#about">About</a></li>
                             <li class="point">.</li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+                            <li class="menulink"><a href="#get_a_quote">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>   
         </div>
     </header>
 
@@ -44,7 +43,9 @@
             
 
         </section>
-        
+
+
+        <div id="services" class="anchor"></div>
         <section class="services">
             
             <div class="ourservices container940">
@@ -64,20 +65,20 @@
 
                     <div class="design">
                         <h3>Custom Design</h3>
-                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                        <p class="texthidden">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                     </div>
 
 
                     <div class="ideasicon"><img src="assets/bulb.png" alt=""></div>
                     <div class="ideas">
                         <h3>Inovative Ideas</h3>
-                        <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                        <p class="texthidden">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                     </div>
 
                     <div class="loveicon"><img src="assets/heart.png" alt=""></div>
                     <div class="love">
                         <h3>Love Is The Answer</h3>
-                        <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                        <p class="texthidden">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                     </div>
 
                 </div>
@@ -87,39 +88,41 @@
                     <div class="layoticon"><img src="assets/phone.png" alt=""></div>
                     <div class="layot">
                         <h3>Responsive Layout</h3>
-                        <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+                        <p class="texthidden">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
                     </div>
 
                     <div class="supporticon"><img src="assets/bubble.png" alt=""></div>
                     <div class="support">
                         <h3>24 / 7 Support</h3>
-                        <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+                        <p class="texthidden">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
                     </div>
 
                     <div class="staricon"><img src="assets/star.png" alt=""></div>
                     <div class="star">
                         <h3>Feel Like A Star</h3>
-                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                        <p class="texthidden">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
                     </div>
                 </div>
                 <div class="clearfix"></div>
             </div>
-        </section>
+        </sec>
 
         <!--Part 2-->
+
+        <div id="portfolio" class="anchor"></div>
 
         <section class="container_gray">
         <div class="portfolio container940">
             <h2>Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <nav>
+            <nav id="portfolio_menu">
                     <a>All</a>
                     <a>Web Design</a>
                     <a>Graphic Design</a>
                     <a>Artwork</a>
                 
             </nav>
-            <div class="images images_layot">
+            <div id="portfolio-img" class="images images_layot">
                 <img src="assets/image1.png" alt="Image1">
                 <img src="assets/image2.png" alt="Image2">
                 <img src="assets/image3.png" alt="Image3">
@@ -137,7 +140,7 @@
         </div>
     </section>
 
-
+    <div id="about" class="anchor"></div>
     <section class="container_lightgray">
         <div class="about container940">
             <h2>About Us</h2>
@@ -146,7 +149,7 @@
             <div class="photos">
                 <div class="sectionfirst">
                     <img src="assets/photo1.png" alt="Adam Jensen">
-                    <h3>Adam Jensen</h3>
+                    <h3 class="abouttitle">Adam Jensen</h3>
                     <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                     <div class="social_icons">
                         
@@ -160,7 +163,7 @@
 
                 <div class="sectionsecond">
                     <img src="assets/photo2.png" alt="Desmond Miles">
-                    <h3>Desmond Miles</h3>
+                    <h3 class="abouttitle">Desmond Miles</h3>
                     <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                     <div class="social_icons">                        
                         <div class="social facebook"><a href="#"></a></div>
@@ -173,7 +176,7 @@
 
                 <div class="sectionthird">
                     <img src="assets/photo3.png" alt="Scolara Visari">
-                    <h3>Scolara Visari</h3>
+                    <h3 class="abouttitle">Scolara Visari</h3>
                     <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                     <div class="social_icons">
                         
@@ -196,7 +199,7 @@
     
     <!--Part 3-->
     
-    <div class="get_a_quote">
+    <div id="get_a_quote" class="get_a_quote">
         <div class="container940">
             <h2>Get a Quote</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, 
@@ -255,5 +258,8 @@
         </div>
 
     </footer>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
