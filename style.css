@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+header {
+    position: sticky;
+    top: 0;
+}
+
+/*header a:link, header a:visited {
+    color: white;
+    text-decoration: none;
+}*/
 
 header li{
     list-style: none;
@@ -13,10 +22,6 @@ header li{
     font-family: "Lato";
     font-weight: 400;
     text-align: justify;
-}
-
-header li a:hover{
-    color: #f06c64;
 }
 
 header nav a{
@@ -55,6 +60,15 @@ header h1, nav {
     display: inline-block;
 }
 
+  .menulink.active {
+    color: #f06c64;
+  }
+  
+  .menulink a:hover {
+    color: #f06c64;
+  }
+
+
 h2 {
     font-size: 30px;
     line-height: 18px;
@@ -65,6 +79,13 @@ h2 {
 }
 
 
+
+.anchor{
+    position: relative;
+    top:-95px;
+    height: 0px;
+    visibility: hidden;
+}
 
 .ourservices h2 {
     letter-spacing: -0.005em;
@@ -96,6 +117,17 @@ h2 {
     margin-right:-5px;
      
 }
+
+
+/*
+.menulink.active {
+    color: #f06c64;;
+}
+  
+.menulink a:hover {
+    color: #f06c64;;
+}*/
+
 .redbackground {
     width: 1020px;
     height: 600px;
@@ -177,9 +209,14 @@ h2 {
     margin-top: 19px;
     letter-spacing: 0.01em;
     word-break: break-all;
+
     
 }
 
+.texthidden{
+    height: 65px;
+    overflow: hidden;
+}
 
 .layot, .support, .star {
     width: 219px;
@@ -358,6 +395,12 @@ padding-bottom: 19px;
     overflow: hidden;
     text-align: justify;
 
+}
+.abouttitle {
+    max-width: 280px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .photos img {
