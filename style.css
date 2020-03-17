@@ -60,7 +60,11 @@ header h1, nav {
     display: inline-block;
 }
 
-  .menulink.active {
+  .menulink-active {
+    color: #f06c64;
+  }
+
+  .menulink-active a:hover {
     color: #f06c64;
   }
   
@@ -329,6 +333,11 @@ h2 {
 padding-bottom: 19px;
 }
 
+.tag:hover {
+    color: #c5c5c5;
+    border-color: #c5c5c5;
+}
+  
 .container_gray {
     width: 1020px;
     height: 869px;
