@@ -2,7 +2,9 @@ window.onload = () => {
   MenuActive();
   PortfolioImageFrame();
   TagPortfolioActive();
+  iPhoneDisplay();
 }
+
 /*Add active menu links*/
 
 const MenuActive = () => {
@@ -18,10 +20,10 @@ const MenuActive = () => {
 /*Add frame around Portfolio images*/
 
 const PortfolioImageFrame = () => {
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    const portfolioImages = document.querySelectorAll('.portfolio-item');
     document.querySelector('.images-layot').addEventListener('click', (event) => {
       if (event.target.classList.contains('portfolio-item')) {
-        portfolioItems.forEach(item => item.classList.remove('portfolio-item-active'))
+        portfolioImages.forEach(item => item.classList.remove('portfolio-item-active'))
         event.target.classList.add('portfolio-item-active');
       }
     })
@@ -37,4 +39,17 @@ const TagPortfolioActive = () => {
         event.target.classList.add('tag-active');
       })
     });
+}
+
+/*Change displays on phones in slider*/
+
+const iPhoneDisplay = () => {
+    const iphones = document.querySelectorAll('.iphone');
+    iphones.forEach(iphone => {
+      iphone.addEventListener('click', (event) => {
+        if (event.target.classList.contains('display')) return;
+        const display = iphone.querySelector('.black-display');
+        display.classList.toggle('display-show');
+      });
+    })
   }
