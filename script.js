@@ -52,4 +52,17 @@ const iPhoneDisplay = () => {
         display.classList.toggle('display-show');
       });
     })
-  }
+}
+
+/* Change position of images in Portfolio*/
+
+const portfolioMenu = document.querySelector(".portfolio_menu");
+    const images = document.querySelector(".images");
+      portfolioMenu.addEventListener("click", function(event) {
+      event.preventDefault();
+      let tags = event.target;
+        if (!tags.classList.contains("tag")) return;
+        
+        let portfolioItems = images.querySelectorAll(".portfolio-item");
+        images.appendChild(portfolioItems[0]);
+    })
