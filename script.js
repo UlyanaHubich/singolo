@@ -3,6 +3,8 @@ window.onload = () => {
   PortfolioImageFrame();
   TagPortfolioActive();
   iPhoneDisplay();
+  ChangePortfolioTags();
+  
 }
 
 /*Add active menu links*/
@@ -41,6 +43,7 @@ const TagPortfolioActive = () => {
     });
 }
 
+
 /*Change displays on phones in slider*/
 
 const iPhoneDisplay = () => {
@@ -54,15 +57,20 @@ const iPhoneDisplay = () => {
     })
 }
 
+ 
 /* Change position of images in Portfolio*/
 
-const portfolioMenu = document.querySelector(".portfolio_menu");
+const ChangePortfolioTags = () => {
+
+  const portfolioMenu = document.querySelector(".portfolio_menu");
     const images = document.querySelector(".images");
-      portfolioMenu.addEventListener("click", function(event) {
+      portfolioMenu.addEventListener("click", (event) => {
       event.preventDefault();
       let tags = event.target;
         if (!tags.classList.contains("tag")) return;
-        
+          
         let portfolioItems = images.querySelectorAll(".portfolio-item");
         images.appendChild(portfolioItems[0]);
-    })
+      })
+}  
+   
