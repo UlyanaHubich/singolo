@@ -14,8 +14,11 @@
     <header>
         <div class="container wrapper">
             <div class="container940 clearfix">
+                <div class="burger"><span class="burger-line"></span></div> 
+                <a href="index.html" class="logo">  
                 <h1>Singolo<span>*</span></h1>
-                <nav class="menu">
+                </a>
+                <nav class="menu" id="menu">
                     <ul class="navigation">
                             <li class="menuitem" ><a href="#home" class="menu-link" class="menu-active">Home</a></li>
                             <li class="menuitem"><a href="#services" class="menu-link">Services</a></li>
@@ -29,7 +32,8 @@
     </header>
 
     <main class="container">
-        <section class="redbackground">
+        <section class="slider-block">
+            <a name="portfolio"></a>
             <div class="slider">
                 <div class="arrowleft"><a href="#"><img src="assets/arrow_left.png" alt="left arrow"></a></div>
                 
@@ -53,7 +57,7 @@
 
         <div id="services" class="anchor"></div>
         <section class="services">
-            
+            <a name="services"></a>
             <div class="ourservices container940">
                 <h2>Our Services</h2>
                 <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
@@ -66,58 +70,67 @@
         
             <div class="services_blocks container940"> 
                 <div class="containerflex">
+                    <div class="service">
+                        <div class="designicon"><img src="assets/pen.png" alt=""></div>
 
-                   <div class="designicon"><img src="assets/pen.png" alt=""></div>
+                        <div class="design">
+                            <h3>Custom Design</h3>
+                            <p class="texthidden">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                        </div>
+                    </div>
+                   
 
-                    <div class="design">
-                        <h3>Custom Design</h3>
-                        <p class="texthidden">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    <div class="service">
+                            <div class="ideasicon"><img src="assets/bulb.png" alt=""></div>
+                        <div class="ideas">
+                            <h3>Inovative Ideas</h3>
+                            <p class="texthidden">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                        </div>
                     </div>
 
+                    <div class="service">
+                        <div class="loveicon"><img src="assets/heart.png" alt=""></div>
+                        <div class="love">
+                            <h3>Love Is The Answer</h3>
+                            <p class="texthidden">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                        </div>
+                    </div>
+               
+                    <div class="service">
+                        <div class="layoticon"><img src="assets/phone.png" alt=""></div>
+                        <div class="layot">
+                            <h3>Responsive Layout</h3>
+                            <p class="texthidden">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+                        </div>
 
-                    <div class="ideasicon"><img src="assets/bulb.png" alt=""></div>
-                    <div class="ideas">
-                        <h3>Inovative Ideas</h3>
-                        <p class="texthidden">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                     </div>
 
-                    <div class="loveicon"><img src="assets/heart.png" alt=""></div>
-                    <div class="love">
-                        <h3>Love Is The Answer</h3>
-                        <p class="texthidden">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                    <div class="service">
+                        <div class="supporticon"><img src="assets/bubble.png" alt=""></div>
+                        <div class="support">
+                            <h3>24 / 7 Support</h3>
+                            <p class="texthidden">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+                        </div>
                     </div>
-
-                </div>
-
-                <div class="containerflex">
-
-                    <div class="layoticon"><img src="assets/phone.png" alt=""></div>
-                    <div class="layot">
-                        <h3>Responsive Layout</h3>
-                        <p class="texthidden">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-                    </div>
-
-                    <div class="supporticon"><img src="assets/bubble.png" alt=""></div>
-                    <div class="support">
-                        <h3>24 / 7 Support</h3>
-                        <p class="texthidden">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
-                    </div>
-
-                    <div class="staricon"><img src="assets/star.png" alt=""></div>
-                    <div class="star">
-                        <h3>Feel Like A Star</h3>
-                        <p class="texthidden">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-                    </div>
+                        
+                    <div class="service">
+                        <div class="staricon"><img src="assets/star.png" alt=""></div>
+                        <div class="star">
+                            <h3>Feel Like A Star</h3>
+                            <p class="texthidden">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                        </div>
+                    </div>    
                 </div>
                 <div class="clearfix"></div>
             </div>
-        </sec>
+        </section>
 
         <!--Part 2-->
 
         <div id="portfolio" class="portfolio-layot" class="anchor"></div>
 
-        <section class="container_gray">
+        <section class="portfolio-block">
+        <a name="portfolio"></a>
         <div class="portfolio container940">
             <h2>Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -147,7 +160,8 @@
     </section>
 
     <div id="about" class="anchor"></div>
-    <section class="container_lightgray">
+    <section class="about-block">
+        <a name="about"></a>
         <div class="about container940">
             <h2>About Us</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -198,14 +212,11 @@
         </div>
 
     </section>
-
-        
-
-    </main>
-    
+  
     <!--Part 3-->
     
     <div id="get_a_quote" class="get_a_quote">
+        <a name="get_a_quote"></a>
         <div class="container940">
             <h2>Get a Quote</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, 
@@ -221,6 +232,13 @@
                 <button type="submit" id="register">Submit</button>
                    
             </form>
+
+            <dialog class="dialog">
+                <p>Письмо отправлено</p>
+                <br class="noSubject">
+                <br class="noMessage">
+                <button class="buttonClose">OK</button>
+            </dialog>
 
 
             <div class="contact">
@@ -252,6 +270,8 @@
         
 
     </div>
+
+</main>
 
     <footer class="footer">
         <p>© Copyright 2013</p>
