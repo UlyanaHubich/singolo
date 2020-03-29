@@ -5,11 +5,8 @@ window.onload = () => {
   iPhoneDisplay();
   ChangePortfolioTags();
   DialogWindow();
-  ScrollMenu();
   BurgerMenu();
 }
-
-/*document.addEventListener('scroll', onScroll);*/
 
 
 /*Add active menu links*/
@@ -145,30 +142,4 @@ const BurgerMenu = () => {
 
 }
 
-
-
-const ScrollMenu = () => {
-  const sections = document.querySelectorAll('section');
-  const menuLinks = document.querySelectorAll('.menu-link');
-  document.addEventListener('scroll', (event) => {
-      let cursorPositionY = window.scrollY + 75;
-      sections.forEach(item => {
-        if (item.offsetTop <= cursorPositionY && (item.offsetTop + item.offsetHeight) > cursorPositionY) {
-          menuLinks.forEach(link => {
-            link.classList.remove('menu-active');
-            if (item.getAttribute('id') === link.getAttribute('href').substring(1)) {
-              link.classList.add('menu-active');
-            } else if (item.getAttribute('id') === 'slider' && link.getAttribute('href') === '#') {
-              link.classList.add('menu-active');
-            } else if (cursorPositionY + 1 >= document.documentElement.scrollHeight - document.documentElement.clientHeight && link.getAttribute('href') === '#get_a_quote') {
-              menuLinks.forEach(link => {
-                link.classList.remove('menu-active');
-              })
-              link.classList.add('menu-active');
-            }
-          })
-        }
-      })
-    }
-  )
 
